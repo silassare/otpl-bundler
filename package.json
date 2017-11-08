@@ -1,0 +1,17 @@
+{
+  "name": "otpl-bundler",
+  "version": "1.0.1",
+  "description": "bundle otpl templates for web",
+  "main": "index.js",
+  "bin": {
+    "otpl-bundler": "./bin/otpl-bundler.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "otpl-js": "^1.1.4"
+  },
+  "author": "Emile Silas Sare (emile.silas@gmail.com)",
+  "license": "ISC"
+}

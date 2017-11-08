@@ -1,0 +1,20 @@
+(function() {
+/**
+ * Auto-generated file, please don't edit
+ *
+ *  - otpl-bundler <%$.otpl_bundler_version%>
+ *  - OTpl <%$.otpl_version%>
+ *
+ * <%$.otpl_bundle_date%>
+ */
+	"use strict";
+
+	OTpl
+<%loop( $.files : $path : $content ){%>
+	.addLocalFile(
+		"<%$path%>" ,
+		"<%$content%>"
+	)
+<%}%>;
+
+})();
