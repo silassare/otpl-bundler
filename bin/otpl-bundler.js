@@ -13,7 +13,7 @@
 
 var otplBundler = require( './../index' );
 
-var argAxists = function(name){
+var argExists = function(name){
 	return process.argv.indexOf(name) != -1;
 };
 
@@ -46,7 +46,7 @@ var printUsage = function( err_message ){
 	process.exit(0);
 };
 
-if( argAxists('-h') || argAxists('--help') ) return printUsage();
+if( argExists('-h') || argExists('--help') ) return printUsage();
 
 var source_dir = getArg('--source') ;
 var dest_dir = getArg('--dest-dir') || process.cwd();
